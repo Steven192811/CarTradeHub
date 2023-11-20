@@ -1,0 +1,77 @@
+.carousel-item .carousel-image {
+  height: 450px; /* Adjust the height as needed */
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-image {
+  border-radius: 20px; /* Adjust the value as needed for your desired roundness */
+  overflow: hidden;
+}
+
+.card.card--container {
+  border-radius: 20px;
+  height: 450px; /* Set the height to match the left card */
+}
+
+.square-content {
+  height: 450px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Modify the shadow values as needed */
+}
+
+.card--container {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+
+  .show-card-title {
+    color: rgb(77, 77, 77);
+    font-size: 1.9em;
+    font-weight: 700;
+    margin: 0;
+    bottom: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+
+  .show-card--price-text {
+    color: rgb(77, 77, 77);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .show-card-text {
+    color: rgb(85, 85, 86);
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
+
+.card--description-text {
+  color: rgb(85, 85, 86);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.custom-h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.custom-h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.car-info-plate {
+  .card-body {
+    min-width: 100%;
+  }
+}

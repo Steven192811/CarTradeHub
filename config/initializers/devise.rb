@@ -14,8 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '4e8f968882d37c5f68c0a96dd6a956cdc873a6b600b75cd6902ac29613da6dea379ab74bb7de19aa9a3c8863b06aa6aa668b118ffd07b2ee4135b7576447addc'
-
+  # config.secret_key = 'ed85a198712da00b121d82461e6b75f579864edca1469408abc40d0832a0e3a8444f876e302ae7cd526c87f2263656c2c9a8853941a3143ebc0b68fe5e5cc950'
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -89,6 +88,7 @@ Devise.setup do |config|
 
   # It will change confirmation, password recovery and other workflows
   # to behave the same regardless if the e-mail provided was right or wrong.
+  # By default, Devise cleans up the CSRF token on authentication to
   # Does not affect registerable.
   # config.paranoid = true
 
@@ -99,7 +99,6 @@ Devise.setup do |config|
   # passing skip: :sessions to `devise_for` in your config/routes.rb
   config.skip_session_storage = [:http_auth]
 
-  # By default, Devise cleans up the CSRF token on authentication to
   # avoid CSRF token fixation attacks. This means that, when using AJAX
   # requests for sign in and sign up, you need to get a new CSRF token
   # from the server. You can disable this option at your own risk.
@@ -126,7 +125,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '7a2b640fa390e9dd320f2d7d192330fbbeb29a40a420cb98d6bbed42236008228c766cf4a6b160de6e498167f2e41ebdf7d8898fbbdbb6b3d2d285b8d1137e5f'
+  # config.pepper = 'b3f9bfee366d018c11d6bafac47b2d6b9ccf4ac6913fd612a6ad740e2bb80bae89de0f17a39bde3194d250f9449e7c07f36e1c70f267910e192e13f6021513d2'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -299,7 +298,7 @@ Devise.setup do |config|
   # ==> Hotwire/Turbo configuration
   # When using Devise with Hotwire/Turbo, the http status for error responses
   # and some redirects must match the following. The default in Devise for existing
-  # apps is `200 OK` and `302 Found` respectively, but new apps are generated with
+  # apps is `200 OK` and `302 Found respectively`, but new apps are generated with
   # these new defaults that match Hotwire/Turbo behavior.
   # Note: These might become the new default in future versions of Devise.
   config.responder.error_status = :unprocessable_entity
