@@ -12,10 +12,7 @@ Car.destroy_all
 puts 'creating users...'
 # Create an array of hashes containing the user data we want to seed
 users_data = [
-  { email: 'akane@example.com', password: '123456' },
-  { email: 'steven@example.com', password: '123456' },
-  { email: 'ardian@example.com', password: '123456' },
-  { email: 'erwin@example.com', password: '123456' }
+  { email: 'steven@example.com', password: '123456' }
 ]
 
 # Create an empty array to store the users
@@ -87,8 +84,7 @@ cars_data = [
   { brand: 'Mercedes', year: 2008, model: 'Benz E', price_cents: 200000, description: '
   The 2009 Mercedes-Benz E-Class is part of the W211 generation and represents a midsize luxury sedan that is known for its sophisticated design, advanced technology, and comfort. ', img_url: benze_urls },
   { brand: 'Ford', year: 2019, model: 'Fiesta', price_cents: 250000, description: 'The 2009 Ford Fiesta is a subcompact car that is known for its fuel efficiency, compact size, and practicality.', img_url: ford_urls }
-];
-
+]
 
 # Create an empty array to store the cars
 cars = []
